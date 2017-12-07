@@ -271,8 +271,8 @@ public class KitchenSinkController {
                         BlockingConnection connection = mqtt.blockingConnection();
                         try {
                             connection.connect();
-                            $payload = "a0";
-                            connection.publish(topic, $payload.getBytes(), QoS.AT_LEAST_ONCE, false);
+                            String payload = "a0";
+                            connection.publish(topic, payload.getBytes(), QoS.AT_LEAST_ONCE, false);
                         } catch (Exception ex) {
                             // Logger.getLogger(mqttku.class.getName()).log(Level.SEVERE, null, ex);
                         }
@@ -310,8 +310,8 @@ public class KitchenSinkController {
                         BlockingConnection connection = mqtt.blockingConnection();
                         try {
                             connection.connect();
-                            $payload = "a1";
-                            connection.publish(topic, $payload.getBytes(), QoS.AT_LEAST_ONCE, false);
+                            String payload = "a1";
+                            connection.publish(topic, payload.getBytes(), QoS.AT_LEAST_ONCE, false);
                 
                         } catch (Exception ex) {
                             // Logger.getLogger(mqttku.class.getName()).log(Level.SEVERE, null, ex);
