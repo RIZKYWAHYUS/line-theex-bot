@@ -61,6 +61,14 @@ subprojects {
     apply plugin: 'propdeps-eclipse'
     apply plugin: 'findbugs'
     apply plugin: 'java'
+
+    //tambahan sendiri, biar dia mau dimasukin library apa aja
+    findbugs {
+        ignoreFailures = true
+    }
+    
+
+
     if (new File("${project.rootDir}/.git").exists()) {
         logger.info("There's .git directory. Create git.properties.")
         apply plugin: 'com.gorylenko.gradle-git-properties'
