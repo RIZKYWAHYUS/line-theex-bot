@@ -1,3 +1,7 @@
+# line-theex-bot
+LINE chat bot dengan skill IoT
+Hasil modifikasi repo https:/github.com/line/line-bot-sdk-java.git 
+
 # The Messaging API SDK for Java
 
 [![Build Status](https://travis-ci.org/line/line-bot-sdk-java.svg?branch=master)](https://travis-ci.org/line/line-bot-sdk-java)
@@ -122,3 +126,4 @@ Note: You don't need to use an add-on like Fixie to have static IP addresses for
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
