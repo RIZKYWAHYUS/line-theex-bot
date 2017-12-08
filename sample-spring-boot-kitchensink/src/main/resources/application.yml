@@ -15,8 +15,8 @@
 
  
 line.bot:
-  channel-token: 's7xE9o5cSJAeRJL71mGp5cqMQe6+q6kFT2EvEz2qW93h/D82M3LstObEKZozy1IHQQk+vvRD9wji85jT57KbKFLCVsjplyjDrAczPOQ+aA0l8veMkG3s4Nz+QbinXHAmD6s9Rc5dJ3C2luMSPuzzCgdB04t89/1O/w1cDnyilFU='
-  channel-secret: '8fe7dc1afaa8f86c206c4b64a6de79e1'
+  channel-token: 'taruh_sini_channel_token_key_mu'
+  channel-secret: 'taruh_sini_channel_secret_key_mu'
   handler.path: /callback
 
 # To remove Client wire logs. Please comment out following lines.

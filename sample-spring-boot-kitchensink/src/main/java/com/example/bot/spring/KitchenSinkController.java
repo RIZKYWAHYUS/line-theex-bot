@@ -95,11 +95,11 @@ import org.fusesource.mqtt.client.QoS;
 @LineMessageHandler
 public class KitchenSinkController {
 
-    String hostname = "ngehubx.online";
-    String username = "admintes";
-    String password = "admin123";
-    String topic    = "onOff";
-    String clientID = "iotworkshopprepare";
+    String hostname = "";
+    String username = "";
+    String password = "";
+    String topic    = "";
+    String clientID = "";
 
 
     @Autowired
@@ -329,11 +329,16 @@ public class KitchenSinkController {
                             Arrays.asList(  
                                 new TextMessage("status OFF")) 
                             );
+                    } else {
+                                this.replyText(
+                                        replyToken,
+                                        text
+                                );
                     }
-            
 
-
-        log.info("Got text message from {}: {}", replyToken, text);
+                    log.info("Returns echo message {}: {}", replyToken, text);
+                    
+ 
         // switch (text) {
         //     case "profile": {
         //         String userId = event.getSource().getUserId();
